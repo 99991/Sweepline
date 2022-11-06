@@ -6,6 +6,7 @@ This code computes intersections between line segments in `O((n + k) log n)` whe
 
 It handles all degenerate cases I could come up with and asymptotic performance seems reasonable,
 but the implicit constant is much too large for almost all practical applications.
+This project will stay in this proof-of-concept stage for the foreseeable future.
 
 Most people will be better served by an algorithm based on spatial partitioning.
 
