@@ -2,13 +2,24 @@
 
 This code computes intersections between line segments in `O((n + k) log n)` where `n` is the number of segments and `k` is the number of intersections.
 
-The code is not production-ready!
+⚠️ This code is not production-ready!
+
 It handles all degenerate cases I could come up with and asymptotic performance seems reasonable,
-but the implicit constant is much too large for most practical applications.
+but the implicit constant is much too large for almost all practical applications.
+
+Most people will be better served by an algorithm based on spatial partitioning.
+
+![](benchmark.png)
 
 # Compilation
 
-The following command will compile `main`, `benchmark`, `example_segments` and `example_intersections`.
+1. Install GMP.
+
+```bash
+sudo apt-get install libgmp-dev
+```
+
+2. Compile `main`, `benchmark`, `example_segments` and `example_intersections`.
 
 ```bash
 make
