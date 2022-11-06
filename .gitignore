@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+main
+example_segments
+example_intersections
+benchmark
